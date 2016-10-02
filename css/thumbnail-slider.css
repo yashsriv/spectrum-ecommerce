@@ -3,6 +3,7 @@
 #thumbnail-slider {
     margin:0 auto; /*center-aligned*/
     width:100%;/*width:400px;*/
+    max-width: 600px;
     padding:20px;
     background-color:#f2f1ea;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);

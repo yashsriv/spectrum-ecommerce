@@ -113,3 +113,32 @@ footer {
   font-weight: 500;
   font-size: large;
 }
+
+.heading1 {
+  text-align: left;
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  width: 40%;
+  height: 100%;
+}
+
+.heading1 .flow-text {
+  font-size: 250% !important;
+}
+
+.match-height1 {
+  padding-bottom: 0;
+}
+
+@media  screen and (max-width: 992px) {
+  #hand-picked {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .righter {
+    float: right;
+  }
+}

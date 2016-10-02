@@ -68,54 +68,68 @@
         </div>
       </li>
       <center>
-	<style>
-	  center li {
-	  padding:0px;
-	  margin:0px;
-	  }
-	  center li::after {
-	  content: '';
-	  display: block;
-	  margin: 0 auto;
-	  position: relative;
-	  bottom: 0em;
-	  width: 230px;
-	  height: 0px;
-	  background: transparent;
-	  border-top:1px solid white;
-	  }
-	  center hr {
-	  margin:0px;
-	  display:none;
-	  padding:0px;
-	  }
-	  center li:hover {
-	  background-color:white !important;
-	  opacity:1;
-	  }
-	  center li:hover a {
-	  background-color:white !important;
-	  color:black !important; 
-	  }
-	</style>
+        <style>
+          center li {
+            padding: 0px;
+            margin: 0px;
+          }
+          
+          center li::after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            bottom: 0em;
+            width: 230px;
+            height: 0px;
+            background: transparent;
+            border-top: 1px solid white;
+          }
+          
+          center hr {
+            margin: 0px;
+            display: none;
+            padding: 0px;
+          }
+          
+          center li:hover {
+            background-color: white !important;
+            opacity: 1;
+          }
+          
+          center li:hover a {
+            background-color: white !important;
+            color: black !important;
+          }
+        </style>
         <li><a href="#!" id="whatsnew">What's New?</a></li>
-	<script>
-	  var hoverComfort = 0; 
-	  document.body.onload = function() {
-	  document.getElementById("extrapopup").style.display = "none";
-	  var calculated = Math.floor($("#supports").position().top - $("#whatsnew").position().top);
-	  calculated = Math.floor(calculated*9/7) + 2; 
-	  var calc2 = Math.floor($('#whatsnew').position().top) - 1; 
-	  document.getElementById("extrapopup").style.height = calculated + "px";
-	  document.getElementById("extrapopup").style.top =calc2 + "px";
-	  $("center li a").hover(function() {this.setAttribute('style', 'color:black !important'); document.getElementById("extrapopup").style.display = "block"; hoverComfort++; }, function() {this.setAttribute('style', ''); hoverComfort--;});
-	  $("aside").hover(function() {hoverComfort++}, function() {hoverComfort--});
-	  $(document).mousemove(function() {
-	  if(hoverComfort == 0) document.getElementById("extrapopup").style.display = "none";
-	  });
-	  }
-	  
-	</script>
+        <script>
+          var hoverComfort = 0;
+          document.body.onload = function() {
+            document.getElementById("extrapopup").style.display = "none";
+            var calculated = Math.floor($("#supports").position().top - $("#whatsnew").position().top);
+            calculated = Math.floor(calculated * 9 / 7) + 2;
+            var calc2 = Math.floor($('#whatsnew').position().top) - 1;
+            document.getElementById("extrapopup").style.height = calculated + "px";
+            document.getElementById("extrapopup").style.top = calc2 + "px";
+            $("center li a").hover(function() {
+              this.setAttribute('style', 'color:black !important');
+              document.getElementById("extrapopup").style.display = "block";
+              hoverComfort++;
+            }, function() {
+              this.setAttribute('style', '');
+              hoverComfort--;
+            });
+            $("aside").hover(function() {
+              hoverComfort++
+            }, function() {
+              hoverComfort--
+            });
+            $(document).mousemove(function() {
+              if (hoverComfort == 0) document.getElementById("extrapopup").style.display = "none";
+            });
+          }
+        </script>
         <hr>
         <li><a href="#!">Brands</a></li>
         <hr>
@@ -128,59 +142,77 @@
         <li><a href="#!">Sports</a></li>
         <hr>
 
-          <li><a href="#!">Contact Us</a></li>
-          <hr>
-          <li><a href="#!" id="supports">Support</a></li>
+        <li><a href="#!">Contact Us</a></li>
+        <hr>
+        <li><a href="#!" id="supports">Support</a></li>
 
       </center>
     </ul>
   </header>
   <aside>
-    <div id="extrapopup" style="border: 1px solid black; border-left:0px;position:fixed; width:30%;padding:2em;left:300px; top:0px; background-color:white; z-index:10000;overflow:auto;">
+    <div id="extrapopup" style="border: 1px solid black; border-left:0px;position:fixed; min-width:400px; width: 30%;padding:2em;left:300px; top:0px; background-color:white; z-index:10000;overflow:auto;">
       <table>
-	<tr>
-	  <td>This Week</td>
-	  <td>Last Week</td>
-	  <td>The coat room</td>
-	  <td>The Trends</td>
-	</tr>
-	<tr>
-	  <td>Back in Stock</td>
-	  <td>New Designers</td>
-	  <td>The essentials</td>
-	  <td>This week</td>
-	</tr>
-	<tr style="border-top:1px solid black; margin-top:10px; padding-top:10px;">
-	  <style>
-	    img.shitty_img {
-	    width:5em;
-	    }
-	  </style>
-	  <td><img class="shitty_img" src="/images/Tie.jpg"></td>
-	  <td><img class="shitty_img" src="/images/Tie.jpg"></td>
-	  <td><img class="shitty_img" src="/images/Tie.jpg"></td>
-	  <td><img class="shitty_img" src="/images/Tie.jpg"></td>
-	</tr>
+        <tr>
+          <td>This Week</td>
+          <td>Last Week</td>
+          <td>The coat room</td>
+          <td>The Trends</td>
+        </tr>
+        <tr>
+          <td>Back in Stock</td>
+          <td>New Designers</td>
+          <td>The essentials</td>
+          <td>This week</td>
+        </tr>
+        <tr style="border-top:1px solid black; margin-top:10px; padding-top:10px;">
+          <style>
+            img.shitty_img {
+              width: 5em;
+            }
+            
+            @media screen and (max-width:992px) {
+              aside {
+                visibility: hidden;
+              }
+            }
+          </style>
+          <td><img class="shitty_img" src="./images/Tie.jpg"></td>
+          <td><img class="shitty_img" src="./images/Tie.jpg"></td>
+          <td><img class="shitty_img" src="./images/Tie.jpg"></td>
+          <td><img class="shitty_img" src="./images/Tie.jpg"></td>
+        </tr>
       </table>
     </div>
   </aside>
   <main>
 
-    <div class="carousel carousel-slider center" data-indicators="true" style="height: 100% !important;">
-      <div class="carousel-fixed-item center">
-        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    <div class="carousel carousel-slider" style="height: 100% !important;">
+      <div class="carousel-item black-text" href="#one!">
+        <img src="./images/1.jpg">
+        <div class="heading1">
+          <p class="flow-text" style="font-weight: 700">
+            Reigning Champ <br> Hand Crafted in Canada </p>
+          <p class="black-text flow-text">Fine Branded Clothes</p>
+          <a class="btn waves-effect white grey-text darken-text-2">Shop Now</a>
+        </div>
       </div>
-      <div class="carousel-item white-text" href="#one!" style="background: url('./images/1.jpg') center center">
-        <h2>First Panel</h2>
-        <p class="white-text">This is your first panel</p>
+      <div class="carousel-item black-text" href="#two!">
+        <img src="./images/2.jpg">
+        <div class="heading1">
+          <p class="flow-text" style="font-weight: 700">
+            Reigning Champ <br> Hand Crafted in Canada </p>
+          <p class="black-text flow-text">Fine Branded Clothes</p>
+          <a class="btn waves-effect white grey-text darken-text-2">Shop Now</a>
+        </div>
       </div>
-      <div class="carousel-item white-text" href="#two!" style="background: url('./images/2.jpg') center center">
-        <h2>Second Panel</h2>
-        <p class="white-text">This is your second panel</p>
-      </div>
-      <div class="carousel-item white-text" href="#three!" style="background: url('./images/3.jpg') center center">
-        <h2>Third Panel</h2>
-        <p class="white-text">This is your third panel</p>
+      <div class="carousel-item black-text" href="#three!">
+        <img src="./images/3.jpg">
+        <div class="heading1">
+          <p class="flow-text" style="font-weight: 700">
+            Reigning Champ <br> Hand Crafted in Canada </p>
+          <p class="black-text flow-text">Fine Branded Clothes</p>
+          <a class="btn waves-effect white grey-text darken-text-2">Shop Now</a>
+        </div>
       </div>
     </div>
 
@@ -238,60 +270,96 @@
       </div>
     </div>
     <div class="row">
-      <div class="col m8">
+      <div class="col s12 m9 match-height1">
         <div class="row">
-          <div class="col m3">
+          <div id="hand-picked" class="col s12 m4" style="transform: rotate3d(0,0,1, -90deg) translateX(-40%); text-align: center;">
+            <h4 style="font-weight: 700;">Hand picked</h4>
+            <hr style="width: 80%;"> Your Daily Fashion Feed
           </div>
-          <div class="col m9">
+          <div class="col s12 m8" style="position: relative;">
             <img class="responsive-img" src="./images/Blue Formal.jpg">
+            <div style="position: absolute; top: 30%; left: 5%; width: 40%; height: 100%;">
+              <center>
+                <p> DIRECT FROM PARIS </p>
+                <p> THE LATEST FROM LANVIN </p>
+                <a class="btn waves-effect red darken-2 white-text">Shop Now</a>
+              </center>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col m8" style="padding-left: 15.0%; padding-right: 0.0%;">
-            <img class="responsive-img" src="./images/Blue Jack.jpg">
+          <div class="col s12 m8" style="position: relative;">
+            <img class="responsive-img righter" src="./images/Blue Jack.jpg">
+            <div class="white-text" style="position: absolute; top: 30%; left: 5%; width: 40%; height: 100%;">
+              <center>
+                <p> FLAUNT YOUR KICKS </p>
+                <p> UPTO 40% OFF ON MEN </p>
+                <a class="btn waves-effect red darken-2 white-text">Shop Now</a>
+              </center>
+            </div>
           </div>
-          <div class="col m4">
-            <img class="responsive-img" src="./images/Tie.jpg">
+          <div class="col s12 m4" style="position: relative;">
+            <img class="responsive-img righter" src="./images/Tie.jpg">
+            <div class="black-text" style="position: absolute; top: 30%; left: 15%; width: 40%; height: 100%;">
+              <center>
+                <p> FLAUNT YOUR KICKS </p>
+                <p> UPTO 40% OFF </p>
+                <a class="btn waves-effect red darken-2 white-text">Shop Now</a>
+              </center>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col m4">
+      <div class="col s12 m3 match-height1" style="position: relative;">
         <img class="responsive-img" src="./images/shoe.jpg">
+        <div style="position: absolute; top: 50%; width: 100%; height: 50%;">
+          <center>
+            <p> HOT NOW! </p>
+            <p> New Season Shoes </p>
+            <p> Flaunt Your Kicks </p>
+            <p> Upto 40% off on Men's Footwear </p>
+            <a class="btn waves-effect red darken-2 white-text">Explore the list</a>
+          </center>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12">
-        <div id="thumbnail-slider">
-          <div class="inner">
-            <ul>
-              <li>
-                <a class="thumb" href="./images/bot-1.jpg"></a>
-              </li>
-              <li>
-                <a class="thumb" href="./images/bot-2.png"></a>
-              </li>
-              <li>
-                <a class="thumb" href="./images/bot-3.png"></a>
-              </li>
-              <li>
-                <a class="thumb" href="./images/bot-4.png"></a>
-              </li>
-              <li>
-                <a class="thumb" href="./images/bot-5.png"></a>
-              </li>
-              <li>
-                <a class="thumb" href="./images/bot-6.png"></a>
-              </li>
-              <li>
-                <a class="thumb" href="./images/bot-7.png"></a>
-              </li>
-              <li>
-                <a class="thumb" href="./images/bot-8.png"></a>
-              </li>
-            </ul>
+
+    <center>
+      <h5 style="letter-spacing: 1em;"> Best Selling </h5>
+      <div class="row">
+        <div class="col s12">
+          <div id="thumbnail-slider">
+            <div class="inner">
+              <ul>
+                <li>
+                  <a class="thumb" href="./images/bot-1.jpg"></a>
+                </li>
+                <li>
+                  <a class="thumb" href="./images/bot-2.png"></a>
+                </li>
+                <li>
+                  <a class="thumb" href="./images/bot-3.png"></a>
+                </li>
+                <li>
+                  <a class="thumb" href="./images/bot-4.png"></a>
+                </li>
+                <li>
+                  <a class="thumb" href="./images/bot-5.png"></a>
+                </li>
+                <li>
+                  <a class="thumb" href="./images/bot-6.png"></a>
+                </li>
+                <li>
+                  <a class="thumb" href="./images/bot-7.png"></a>
+                </li>
+                <li>
+                  <a class="thumb" href="./images/bot-8.png"></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+    </center>
   </main>
   <footer class="black white-text">
     <div class="row" style="margin: 0;">
@@ -352,6 +420,7 @@
   <!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

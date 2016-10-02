@@ -5,17 +5,21 @@ $(function() {
   //$('.carousel').carousel();
   $('.carousel.carousel-slider').carousel({
     full_width: true,
-    time_constant: 700
+    time_constant: 700,
+    indicators: false
   });
   $('.carousel.carousel-slider').css('height', '700px');
-  setInterval(function() {$('.carousel').carousel('next');}, 4500);
+  setInterval(function() {
+    $('.carousel').carousel('next');
+  }, 4500);
   $('.match-height').matchHeight();
+  $('.match-height1').matchHeight();
 
   var thumbnailSliderOptions = {
-    sliderId: "imageSlider",
+    sliderId: "thumbnail-slider",
     orientation: "horizontal",
-    thumbWidth: "80%", // or "xx%", or "auto"
-    thumbHeight: "80%", // or "xx%", or "auto"
+    thumbWidth: "140px", // or "xx%", or "auto"
+    thumbHeight: "140px", // or "xx%", or "auto"
     showMode: 1,
     autoAdvance: true,
     selectable: true,
@@ -30,7 +34,7 @@ $(function() {
     mousewheelNav: false,
     before: null,
     license: "yourlicensekey"
-};
+  };
 
   var mcThumbnailSlider = new ThumbnailSlider(thumbnailSliderOptions);
 
