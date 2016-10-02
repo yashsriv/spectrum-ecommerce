@@ -1,0 +1,22 @@
+{
+  "name": "spectrum",
+  "authors": [
+    "Yash Srivastav <yash111998@gmail.com>"
+  ],
+  "description": "An ecommerce website",
+  "main": "index.html",
+  "keywords": [
+    "ecommerce",
+    "foundation",
+    "html5"
+  ],
+  "license": "MIT",
+  "homepage": "yashsriv.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

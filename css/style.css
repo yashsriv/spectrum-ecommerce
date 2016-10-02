@@ -1,0 +1,115 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header,
+main,
+footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+
+#logo {
+  padding-bottom: 24px;
+  margin-bottom: 0px;
+  background-color: #910000;
+}
+
+#logo hgroup {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+}
+
+#logo h5 {
+  letter-spacing: 0.5em;
+}
+
+#logo hr {
+  color: white;
+  width: 100%;
+}
+
+#search-bar {
+  /*box-shadow: 0 4px 3px 0 rgba(0,0,0,0.16),0 7px 6px 0 rgba(0,0,0,0.12) !important;*/
+  box-shadow: none;
+  padding-right: 1%;
+}
+
+#search-div .row .col {
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  margin: 0;
+}
+
+#inner-search {
+  box-shadow: none;
+}
+
+#search-icon {
+  font-size: 24px;
+  box-shadow: none;
+  color: black;
+}
+
+#search::placeholder {
+  color: #111111;
+}
+
+#search::-moz-placeholder {
+  color: #111111;
+}
+
+#search::-webkit-input-placeholder {
+  color: #111111;
+}
+
+#search::-ms-input-placeholder {
+  color: #111111;
+}
+
+#search-div a {
+  padding: 0px;
+}
+
+#search-div i {
+  color: black;
+}
+
+#search-div {
+  color: black;
+}
+
+.side-nav hr {
+  width: 85%;
+  color: white;
+}
+
+#slide-out a {
+  color: white  !important;
+  font-size: large;
+}
+
+.responsive-img {
+  margin:0px; padding: 0px;
+}
+
+.showcase {
+  border: 1px solid #21786c;
+  height: 150px;
+  margin-top: 2%;
+}
+
+.item {
+  font-weight: 500;
+  font-size: large;
+}

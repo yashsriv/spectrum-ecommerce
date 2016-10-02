@@ -1,0 +1,13 @@
+/* Normal Links in Top Bar */
+.top-bar a {
+  color: #111111;
+}
+
+#main_nav {
+  padding: 0.75%;
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
